@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js practice</title>
+</head>
+<body>
+  <h1 id="show"></h1>
+
+  <script>
+    let show = document.getElementById('show');
+
+    function time() {
+      let d = new Date().toLocaleTimeString();
+      show.innerText = 'Time is '  + d;
+    }
+    setInterval(time, 1000);
+  </script>
+</body>
+</html>

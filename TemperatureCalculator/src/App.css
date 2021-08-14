@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: popins, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #444;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slow {
+  animation: slow 1s ease;
+  -webkit-animation: slow 1s ease;
+}
+@keyframes slow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.clients {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.client {
+  border: 1px solid gray;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.client li {
+  font-weight: 600;
+  text-transform: capitalize;
+}
